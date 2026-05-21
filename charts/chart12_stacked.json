@@ -1,0 +1,305 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total substance deaths stay flat, but composition is shifting",
+    "subtitle": "Combined drug-induced and alcohol-induced death rates per 100,000, 2015\u20132024",
+    "anchor": "start",
+    "fontSize": 19,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#666",
+    "offset": 20
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "sans-serif"
+  },
+  "background": "#FAFAF7",
+  "width": 700,
+  "height": 380,
+  "padding": {
+    "left": 20,
+    "right": 90,
+    "top": 10,
+    "bottom": 30
+  },
+  "data": {
+    "values": [
+      {
+        "year": 2015,
+        "category": "Drug-induced",
+        "rate": 7.7
+      },
+      {
+        "year": 2015,
+        "category": "Alcohol-induced",
+        "rate": 5.2
+      },
+      {
+        "year": 2016,
+        "category": "Drug-induced",
+        "rate": 8.0
+      },
+      {
+        "year": 2016,
+        "category": "Alcohol-induced",
+        "rate": 4.9
+      },
+      {
+        "year": 2017,
+        "category": "Drug-induced",
+        "rate": 8.2
+      },
+      {
+        "year": 2017,
+        "category": "Alcohol-induced",
+        "rate": 5.3
+      },
+      {
+        "year": 2018,
+        "category": "Drug-induced",
+        "rate": 8.0
+      },
+      {
+        "year": 2018,
+        "category": "Alcohol-induced",
+        "rate": 4.7
+      },
+      {
+        "year": 2019,
+        "category": "Drug-induced",
+        "rate": 7.9
+      },
+      {
+        "year": 2019,
+        "category": "Alcohol-induced",
+        "rate": 5.0
+      },
+      {
+        "year": 2020,
+        "category": "Drug-induced",
+        "rate": 7.7
+      },
+      {
+        "year": 2020,
+        "category": "Alcohol-induced",
+        "rate": 5.4
+      },
+      {
+        "year": 2021,
+        "category": "Drug-induced",
+        "rate": 7.2
+      },
+      {
+        "year": 2021,
+        "category": "Alcohol-induced",
+        "rate": 5.6
+      },
+      {
+        "year": 2022,
+        "category": "Drug-induced",
+        "rate": 7.2
+      },
+      {
+        "year": 2022,
+        "category": "Alcohol-induced",
+        "rate": 6.2
+      },
+      {
+        "year": 2023,
+        "category": "Drug-induced",
+        "rate": 6.6
+      },
+      {
+        "year": 2023,
+        "category": "Alcohol-induced",
+        "rate": 5.8
+      },
+      {
+        "year": 2024,
+        "category": "Drug-induced",
+        "rate": 7.1
+      },
+      {
+        "year": 2024,
+        "category": "Alcohol-induced",
+        "rate": 5.9
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          2015,
+          2024
+        ],
+        "nice": false
+      },
+      "axis": {
+        "values": [
+          2015,
+          2017,
+          2019,
+          2021,
+          2024
+        ],
+        "format": "d",
+        "labelFontSize": 12,
+        "labelColor": "#555",
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 8
+      }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "title": "Deaths per 100,000",
+      "stack": "zero",
+      "scale": {
+        "domain": [
+          0,
+          16
+        ]
+      },
+      "axis": {
+        "values": [
+          0,
+          4,
+          8,
+          12,
+          16
+        ],
+        "labelFontSize": 12,
+        "labelColor": "#555",
+        "titleFontSize": 12,
+        "titleColor": "#333",
+        "titlePadding": 12,
+        "grid": true,
+        "gridColor": "#EEE",
+        "gridDash": [
+          2,
+          2
+        ],
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 8
+      }
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Drug-induced",
+          "Alcohol-induced"
+        ],
+        "range": [
+          "#7B241C",
+          "#B8862D"
+        ]
+      },
+      "legend": null
+    },
+    "order": {
+      "field": "order",
+      "type": "ordinal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "opacity": 0.85,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2024 && datum.category == 'Drug-induced'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "color": "#7B241C",
+        "align": "left",
+        "dx": 8,
+        "dy": 30
+      },
+      "encoding": {
+        "text": {
+          "value": "Drug-induced"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2024 && datum.category == 'Drug-induced'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "color": "#7B241C",
+        "align": "left",
+        "dx": 8,
+        "dy": 45
+      },
+      "encoding": {
+        "text": {
+          "value": "7.1 per 100k"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2024 && datum.category == 'Alcohol-induced'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "color": "#B8862D",
+        "align": "left",
+        "dx": 8,
+        "dy": -25
+      },
+      "encoding": {
+        "text": {
+          "value": "Alcohol-induced"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2024 && datum.category == 'Alcohol-induced'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "color": "#B8862D",
+        "align": "left",
+        "dx": 8,
+        "dy": -10
+      },
+      "encoding": {
+        "text": {
+          "value": "5.9 per 100k"
+        }
+      }
+    }
+  ]
+}

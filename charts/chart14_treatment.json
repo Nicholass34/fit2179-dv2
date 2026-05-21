@@ -1,0 +1,214 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Alcohol drives Australia's drug treatment system",
+    "subtitle": "Closed treatment episodes by principal drug of concern, 2023\u201324 (AIHW AODTS, 219K total episodes)",
+    "anchor": "start",
+    "fontSize": 19,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#666",
+    "offset": 20
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "sans-serif"
+  },
+  "background": "#FAFAF7",
+  "width": 600,
+  "height": 360,
+  "padding": {
+    "left": 20,
+    "right": 90,
+    "top": 10,
+    "bottom": 30
+  },
+  "data": {
+    "values": [
+      {
+        "drug": "Alcohol",
+        "count": 91361,
+        "pct": 41.7,
+        "count_k": 91.4,
+        "label": "91,361",
+        "pct_label": "41.7%"
+      },
+      {
+        "drug": "Amphetamines",
+        "count": 57791,
+        "pct": 26.4,
+        "count_k": 57.8,
+        "label": "57,791",
+        "pct_label": "26.4%"
+      },
+      {
+        "drug": "Cannabis",
+        "count": 34248,
+        "pct": 15.6,
+        "count_k": 34.2,
+        "label": "34,248",
+        "pct_label": "15.6%"
+      },
+      {
+        "drug": "Opioids (all)",
+        "count": 14671,
+        "pct": 6.7,
+        "count_k": 14.7,
+        "label": "14,671",
+        "pct_label": "6.7%"
+      },
+      {
+        "drug": "Other/unspecified",
+        "count": 9002,
+        "pct": 4.1,
+        "count_k": 9.0,
+        "label": "9,002",
+        "pct_label": "4.1%"
+      },
+      {
+        "drug": "Sedatives/hypnotics",
+        "count": 6706,
+        "pct": 3.1,
+        "count_k": 6.7,
+        "label": "6,706",
+        "pct_label": "3.1%"
+      },
+      {
+        "drug": "Cocaine & MDMA",
+        "count": 3166,
+        "pct": 1.4,
+        "count_k": 3.2,
+        "label": "3,166",
+        "pct_label": "1.4%"
+      },
+      {
+        "drug": "Nicotine",
+        "count": 1936,
+        "pct": 0.9,
+        "count_k": 1.9,
+        "label": "1,936",
+        "pct_label": "0.9%"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 3,
+        "height": {
+          "band": 0.75
+        }
+      },
+      "encoding": {
+        "y": {
+          "field": "drug",
+          "type": "nominal",
+          "sort": [
+            "Alcohol",
+            "Amphetamines",
+            "Cannabis",
+            "Opioids (all)",
+            "Other/unspecified",
+            "Sedatives/hypnotics",
+            "Cocaine & MDMA",
+            "Nicotine"
+          ],
+          "title": null,
+          "axis": {
+            "labelFontSize": 12,
+            "labelColor": "#333",
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 8
+          }
+        },
+        "x": {
+          "field": "count",
+          "type": "quantitative",
+          "title": "Treatment episodes",
+          "scale": {
+            "domain": [
+              0,
+              100000
+            ]
+          },
+          "axis": {
+            "values": [
+              0,
+              25000,
+              50000,
+              75000,
+              100000
+            ],
+            "labelExpr": "datum.value >= 1000 ? (datum.value/1000) + 'k' : datum.value",
+            "labelFontSize": 11,
+            "labelColor": "#555",
+            "titleFontSize": 12,
+            "titleColor": "#333",
+            "domain": false,
+            "ticks": false,
+            "grid": true,
+            "gridColor": "#EEE",
+            "gridDash": [
+              2,
+              2
+            ],
+            "titlePadding": 12
+          }
+        },
+        "color": {
+          "condition": [
+            {
+              "test": "datum.drug == 'Alcohol'",
+              "value": "#1F6E8C"
+            },
+            {
+              "test": "datum.drug == 'Amphetamines'",
+              "value": "#2E94B0"
+            },
+            {
+              "test": "datum.drug == 'Cannabis'",
+              "value": "#5BB0C7"
+            }
+          ],
+          "value": "#A3CEDB"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#333",
+        "align": "left",
+        "dx": 6
+      },
+      "encoding": {
+        "y": {
+          "field": "drug",
+          "type": "nominal",
+          "sort": [
+            "Alcohol",
+            "Amphetamines",
+            "Cannabis",
+            "Opioids (all)",
+            "Other/unspecified",
+            "Sedatives/hypnotics",
+            "Cocaine & MDMA",
+            "Nicotine"
+          ]
+        },
+        "x": {
+          "field": "count",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}
