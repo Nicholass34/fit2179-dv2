@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The drug death ranking is shifting",
-    "subtitle": "Rank of drug classes by deaths each year (1 = most deaths), 2020\u20132024",
+    "subtitle": "Rank of drug classes by deaths each year (1 = most deaths), 2020–2024",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -434,7 +434,29 @@
             ]
           },
           "legend": null
-        }
+        },
+        "tooltip": [
+          {
+            "field": "class",
+            "type": "nominal",
+            "title": "Drug class"
+          },
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "rank",
+            "type": "quantitative",
+            "title": "Rank"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Count"
+          }
+        ]
       }
     },
     {

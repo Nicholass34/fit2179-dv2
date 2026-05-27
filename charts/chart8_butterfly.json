@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Young Australians stopped smoking. Older ones barely did.",
-    "subtitle": "Daily smoking rate by age group, 2001 vs 2022\u201323 (% of each age group)",
+    "subtitle": "Daily smoking rate by age group, 2001 vs 2022–23 (% of each age group)",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -29,86 +29,86 @@
       "data": {
         "values": [
           {
-            "age": "14\u201317",
+            "age": "14–17",
             "year": "2001",
             "value": 11.2,
             "value_signed": -11.2
           },
           {
-            "age": "14\u201317",
-            "year": "2022\u201323",
+            "age": "14–17",
+            "year": "2022–23",
             "value": 0.9,
             "value_signed": 0.9
           },
           {
-            "age": "18\u201324",
+            "age": "18–24",
             "year": "2001",
             "value": 24.0,
             "value_signed": -24.0
           },
           {
-            "age": "18\u201324",
-            "year": "2022\u201323",
+            "age": "18–24",
+            "year": "2022–23",
             "value": 5.9,
             "value_signed": 5.9
           },
           {
-            "age": "25\u201329",
+            "age": "25–29",
             "year": "2001",
             "value": 27.0,
             "value_signed": -27.0
           },
           {
-            "age": "25\u201329",
-            "year": "2022\u201323",
+            "age": "25–29",
+            "year": "2022–23",
             "value": 7.3,
             "value_signed": 7.3
           },
           {
-            "age": "30\u201339",
+            "age": "30–39",
             "year": "2001",
             "value": 25.5,
             "value_signed": -25.5
           },
           {
-            "age": "30\u201339",
-            "year": "2022\u201323",
+            "age": "30–39",
+            "year": "2022–23",
             "value": 8.8,
             "value_signed": 8.8
           },
           {
-            "age": "40\u201349",
+            "age": "40–49",
             "year": "2001",
             "value": 22.1,
             "value_signed": -22.1
           },
           {
-            "age": "40\u201349",
-            "year": "2022\u201323",
+            "age": "40–49",
+            "year": "2022–23",
             "value": 10.8,
             "value_signed": 10.8
           },
           {
-            "age": "50\u201359",
+            "age": "50–59",
             "year": "2001",
             "value": 18.1,
             "value_signed": -18.1
           },
           {
-            "age": "50\u201359",
-            "year": "2022\u201323",
+            "age": "50–59",
+            "year": "2022–23",
             "value": 12.1,
             "value_signed": 12.1
           },
           {
-            "age": "60\u201369",
+            "age": "60–69",
             "year": "2001",
             "value": 11.3,
             "value_signed": -11.3
           },
           {
-            "age": "60\u201369",
-            "year": "2022\u201323",
+            "age": "60–69",
+            "year": "2022–23",
             "value": 10.4,
             "value_signed": 10.4
           },
@@ -120,7 +120,7 @@
           },
           {
             "age": "70+",
-            "year": "2022\u201323",
+            "year": "2022–23",
             "value": 4.9,
             "value_signed": 4.9
           }
@@ -136,13 +136,13 @@
           "field": "age",
           "type": "ordinal",
           "sort": [
-            "14\u201317",
-            "18\u201324",
-            "25\u201329",
-            "30\u201339",
-            "40\u201349",
-            "50\u201359",
-            "60\u201369",
+            "14–17",
+            "18–24",
+            "25–29",
+            "30–39",
+            "40–49",
+            "50–59",
+            "60–69",
             "70+"
           ],
           "title": "Age group",
@@ -198,7 +198,7 @@
           "scale": {
             "domain": [
               "2001",
-              "2022\u201323"
+              "2022–23"
             ],
             "range": [
               "#9B9B9B",
@@ -213,92 +213,109 @@
             "symbolSize": 200,
             "padding": 8
           }
-        }
+        },
+        "tooltip": [
+          {
+            "field": "age",
+            "type": "nominal",
+            "title": "Age group"
+          },
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Smoking rate (%)"
+          }
+        ]
       }
     },
     {
       "data": {
         "values": [
           {
-            "age": "14\u201317",
+            "age": "14–17",
             "x": -12.7,
             "value": 11.2,
             "align": "right"
           },
           {
-            "age": "14\u201317",
+            "age": "14–17",
             "x": 2.4,
             "value": 0.9,
             "align": "left"
           },
           {
-            "age": "18\u201324",
+            "age": "18–24",
             "x": -25.5,
             "value": 24.0,
             "align": "right"
           },
           {
-            "age": "18\u201324",
+            "age": "18–24",
             "x": 7.4,
             "value": 5.9,
             "align": "left"
           },
           {
-            "age": "25\u201329",
+            "age": "25–29",
             "x": -28.5,
             "value": 27.0,
             "align": "right"
           },
           {
-            "age": "25\u201329",
+            "age": "25–29",
             "x": 8.8,
             "value": 7.3,
             "align": "left"
           },
           {
-            "age": "30\u201339",
+            "age": "30–39",
             "x": -27.0,
             "value": 25.5,
             "align": "right"
           },
           {
-            "age": "30\u201339",
+            "age": "30–39",
             "x": 10.3,
             "value": 8.8,
             "align": "left"
           },
           {
-            "age": "40\u201349",
+            "age": "40–49",
             "x": -23.6,
             "value": 22.1,
             "align": "right"
           },
           {
-            "age": "40\u201349",
+            "age": "40–49",
             "x": 12.3,
             "value": 10.8,
             "align": "left"
           },
           {
-            "age": "50\u201359",
+            "age": "50–59",
             "x": -19.6,
             "value": 18.1,
             "align": "right"
           },
           {
-            "age": "50\u201359",
+            "age": "50–59",
             "x": 13.6,
             "value": 12.1,
             "align": "left"
           },
           {
-            "age": "60\u201369",
+            "age": "60–69",
             "x": -12.8,
             "value": 11.3,
             "align": "right"
           },
           {
-            "age": "60\u201369",
+            "age": "60–69",
             "x": 11.9,
             "value": 10.4,
             "align": "left"
@@ -328,13 +345,13 @@
           "field": "age",
           "type": "ordinal",
           "sort": [
-            "14\u201317",
-            "18\u201324",
-            "25\u201329",
-            "30\u201339",
-            "40\u201349",
-            "50\u201359",
-            "60\u201369",
+            "14–17",
+            "18–24",
+            "25–29",
+            "30–39",
+            "40–49",
+            "50–59",
+            "60–69",
             "70+"
           ]
         },

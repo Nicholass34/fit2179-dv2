@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Risky drinking barely budges",
-    "subtitle": "Australians aged 14+ exceeding the national alcohol guidelines, 2001\u20132023",
+    "subtitle": "Australians aged 14+ exceeding the national alcohol guidelines, 2001–2023",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -159,7 +159,8 @@
         "opacity": 0.12,
         "interpolate": "monotone",
         "line": false
-      }
+      },
+      "encoding": {}
     },
     {
       "mark": {
@@ -167,6 +168,20 @@
         "color": "#B8862D",
         "strokeWidth": 2.5,
         "interpolate": "monotone"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Risky drinking (%)"
+          }
+        ]
       }
     },
     {
@@ -175,7 +190,8 @@
         "filled": true,
         "color": "#B8862D",
         "size": 60
-      }
+      },
+      "encoding": {}
     },
     {
       "transform": [
@@ -190,7 +206,8 @@
         "size": 140,
         "stroke": "#FAFAF7",
         "strokeWidth": 2
-      }
+      },
+      "encoding": {}
     },
     {
       "transform": [
@@ -226,7 +243,8 @@
         "size": 140,
         "stroke": "#FAFAF7",
         "strokeWidth": 2
-      }
+      },
+      "encoding": {}
     },
     {
       "transform": [
@@ -245,7 +263,7 @@
       },
       "encoding": {
         "text": {
-          "value": "30.7% in 2022\u201323"
+          "value": "30.7% in 2022–23"
         }
       }
     },

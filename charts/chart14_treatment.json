@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Alcohol drives Australia's drug treatment system",
-    "subtitle": "Closed treatment episodes by principal drug of concern, 2023\u201324 (AIHW AODTS, 219K total episodes)",
+    "subtitle": "Closed treatment episodes by principal drug of concern, 2023–24 (AIHW AODTS, 219K total episodes)",
     "anchor": "start",
     "fontSize": 19,
     "subtitleFontSize": 13,
@@ -174,7 +174,24 @@
             }
           ],
           "value": "#A3CEDB"
-        }
+        },
+        "tooltip": [
+          {
+            "field": "drug",
+            "type": "nominal",
+            "title": "Substance"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Episodes"
+          },
+          {
+            "field": "pct",
+            "type": "quantitative",
+            "title": "Share (%)"
+          }
+        ]
       }
     },
     {

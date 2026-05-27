@@ -29,7 +29,7 @@
           "width": 320,
           "height": 180,
           "title": {
-            "text": "1. Daily smoking \u2014 declining",
+            "text": "1. Daily smoking — declining",
             "fontSize": 13,
             "fontWeight": 600,
             "anchor": "start",
@@ -156,6 +156,20 @@
                 "color": "#555",
                 "strokeWidth": 2.5,
                 "interpolate": "monotone"
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "year",
+                    "type": "quantitative",
+                    "title": "Year"
+                  },
+                  {
+                    "field": "rate",
+                    "type": "quantitative",
+                    "title": "Rate (%)"
+                  }
+                ]
               }
             },
             {
@@ -172,7 +186,7 @@
           "width": 320,
           "height": 180,
           "title": {
-            "text": "2. Vaping \u2014 exploding",
+            "text": "2. Vaping — exploding",
             "fontSize": 13,
             "fontWeight": 600,
             "anchor": "start",
@@ -263,6 +277,20 @@
                 "color": "#1A8A7A",
                 "strokeWidth": 2.5,
                 "interpolate": "monotone"
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "year",
+                    "type": "quantitative",
+                    "title": "Year"
+                  },
+                  {
+                    "field": "rate",
+                    "type": "quantitative",
+                    "title": "Rate (%)"
+                  }
+                ]
               }
             },
             {
@@ -284,7 +312,7 @@
           "width": 320,
           "height": 180,
           "title": {
-            "text": "3. Risky drinking \u2014 stubborn",
+            "text": "3. Risky drinking — stubborn",
             "fontSize": 13,
             "fontWeight": 600,
             "anchor": "start",
@@ -395,6 +423,20 @@
                 "color": "#B8862D",
                 "strokeWidth": 2.5,
                 "interpolate": "monotone"
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "year",
+                    "type": "quantitative",
+                    "title": "Year"
+                  },
+                  {
+                    "field": "rate",
+                    "type": "quantitative",
+                    "title": "Rate (%)"
+                  }
+                ]
               }
             },
             {
@@ -411,7 +453,7 @@
           "width": 320,
           "height": 180,
           "title": {
-            "text": "4. Illicit drug use \u2014 quiet rise",
+            "text": "4. Illicit drug use — quiet rise",
             "fontSize": 13,
             "fontWeight": 600,
             "anchor": "start",
@@ -522,6 +564,20 @@
                 "color": "#C04040",
                 "strokeWidth": 2.5,
                 "interpolate": "monotone"
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "year",
+                    "type": "quantitative",
+                    "title": "Year"
+                  },
+                  {
+                    "field": "rate",
+                    "type": "quantitative",
+                    "title": "Rate (%)"
+                  }
+                ]
               }
             },
             {

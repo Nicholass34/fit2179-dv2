@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Cannabis dominates \u2014 but pharmaceutical misuse is mainstream too",
-    "subtitle": "Recent use (% of Australians 14+ in past 12 months) by drug type, 2022\u201323",
+    "text": "Cannabis dominates — but pharmaceutical misuse is mainstream too",
+    "subtitle": "Recent use (% of Australians 14+ in past 12 months) by drug type, 2022–23",
     "anchor": "start",
     "fontSize": 19,
     "subtitleFontSize": 13,
@@ -175,7 +175,24 @@
             "symbolSize": 200,
             "padding": 8
           }
-        }
+        },
+        "tooltip": [
+          {
+            "field": "drug",
+            "type": "nominal",
+            "title": "Drug type"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Used past year (%)"
+          },
+          {
+            "field": "category",
+            "type": "nominal",
+            "title": "Category"
+          }
+        ]
       }
     },
     {

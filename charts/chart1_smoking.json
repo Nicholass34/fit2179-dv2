@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Daily smoking is dying out",
-    "subtitle": "Australians aged 14+ who smoke tobacco daily, 1991\u20132023",
+    "subtitle": "Australians aged 14+ who smoke tobacco daily, 1991–2023",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -155,7 +155,8 @@
         "opacity": 0.08,
         "interpolate": "monotone",
         "line": false
-      }
+      },
+      "encoding": {}
     },
     {
       "mark": {
@@ -163,6 +164,20 @@
         "color": "#555",
         "strokeWidth": 2.5,
         "interpolate": "monotone"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Smoking rate (%)"
+          }
+        ]
       }
     },
     {
@@ -171,7 +186,8 @@
         "filled": true,
         "color": "#555",
         "size": 60
-      }
+      },
+      "encoding": {}
     },
     {
       "transform": [
@@ -186,7 +202,8 @@
         "size": 140,
         "stroke": "#FAFAF7",
         "strokeWidth": 2
-      }
+      },
+      "encoding": {}
     },
     {
       "transform": [
@@ -222,7 +239,8 @@
         "size": 140,
         "stroke": "#FAFAF7",
         "strokeWidth": 2
-      }
+      },
+      "encoding": {}
     },
     {
       "transform": [
@@ -241,7 +259,7 @@
       },
       "encoding": {
         "text": {
-          "value": "8.3% in 2022\u201323"
+          "value": "8.3% in 2022–23"
         }
       }
     },

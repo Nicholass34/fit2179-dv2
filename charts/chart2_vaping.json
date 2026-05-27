@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Vaping is exploding \u2014 especially among young Australians",
-    "subtitle": "Current e-cigarette/vape users by age group, 2016\u20132023 (% of each group)",
+    "text": "Vaping is exploding — especially among young Australians",
+    "subtitle": "Current e-cigarette/vape users by age group, 2016–2023 (% of each group)",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -44,92 +44,92 @@
       {
         "year": 2016,
         "rate": 0.9,
-        "group": "14\u201317"
+        "group": "14–17"
       },
       {
         "year": 2019,
         "rate": 1.8,
-        "group": "14\u201317"
+        "group": "14–17"
       },
       {
         "year": 2023,
         "rate": 9.7,
-        "group": "14\u201317"
+        "group": "14–17"
       },
       {
         "year": 2016,
         "rate": 2.8,
-        "group": "18\u201324"
+        "group": "18–24"
       },
       {
         "year": 2019,
         "rate": 5.3,
-        "group": "18\u201324"
+        "group": "18–24"
       },
       {
         "year": 2023,
         "rate": 20.6,
-        "group": "18\u201324"
+        "group": "18–24"
       },
       {
         "year": 2016,
         "rate": 1.2,
-        "group": "25\u201329"
+        "group": "25–29"
       },
       {
         "year": 2019,
         "rate": 4.8,
-        "group": "25\u201329"
+        "group": "25–29"
       },
       {
         "year": 2023,
         "rate": 13.9,
-        "group": "25\u201329"
+        "group": "25–29"
       },
       {
         "year": 2016,
         "rate": 1.5,
-        "group": "30\u201339"
+        "group": "30–39"
       },
       {
         "year": 2019,
         "rate": 2.8,
-        "group": "30\u201339"
+        "group": "30–39"
       },
       {
         "year": 2023,
         "rate": 9.1,
-        "group": "30\u201339"
+        "group": "30–39"
       },
       {
         "year": 2016,
         "rate": 1.5,
-        "group": "40\u201349"
+        "group": "40–49"
       },
       {
         "year": 2019,
         "rate": 2.6,
-        "group": "40\u201349"
+        "group": "40–49"
       },
       {
         "year": 2023,
         "rate": 5.0,
-        "group": "40\u201349"
+        "group": "40–49"
       },
       {
         "year": 2016,
         "rate": 0.8,
-        "group": "50\u201359"
+        "group": "50–59"
       },
       {
         "year": 2019,
         "rate": 2.0,
-        "group": "50\u201359"
+        "group": "50–59"
       },
       {
         "year": 2023,
         "rate": 3.2,
-        "group": "50\u201359"
+        "group": "50–59"
       },
       {
         "year": 2016,
@@ -215,7 +215,7 @@
     {
       "transform": [
         {
-          "filter": "datum.group != '18\u201324' && datum.group != 'Total (14+)'"
+          "filter": "datum.group != '18–24' && datum.group != 'Total (14+)'"
         }
       ],
       "mark": {
@@ -229,7 +229,24 @@
         "detail": {
           "field": "group",
           "type": "nominal"
-        }
+        },
+        "tooltip": [
+          {
+            "field": "group",
+            "type": "nominal",
+            "title": "Age group"
+          },
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Vaping rate (%)"
+          }
+        ]
       }
     },
     {
@@ -247,12 +264,31 @@
           4,
           4
         ]
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "group",
+            "type": "nominal",
+            "title": "Age group"
+          },
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Vaping rate (%)"
+          }
+        ]
       }
     },
     {
       "transform": [
         {
-          "filter": "datum.group == '18\u201324'"
+          "filter": "datum.group == '18–24'"
         }
       ],
       "mark": {
@@ -260,12 +296,31 @@
         "color": "#1A8A7A",
         "strokeWidth": 3.5,
         "interpolate": "monotone"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "group",
+            "type": "nominal",
+            "title": "Age group"
+          },
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Vaping rate (%)"
+          }
+        ]
       }
     },
     {
       "transform": [
         {
-          "filter": "datum.group == '18\u201324' && datum.year == 2023"
+          "filter": "datum.group == '18–24' && datum.year == 2023"
         }
       ],
       "mark": {
@@ -275,12 +330,13 @@
         "size": 140,
         "stroke": "#FAFAF7",
         "strokeWidth": 2
-      }
+      },
+      "encoding": {}
     },
     {
       "transform": [
         {
-          "filter": "datum.group == '18\u201324' && datum.year == 2023"
+          "filter": "datum.group == '18–24' && datum.year == 2023"
         }
       ],
       "mark": {
@@ -294,7 +350,7 @@
       },
       "encoding": {
         "text": {
-          "value": "Ages 18\u201324: 20.6%"
+          "value": "Ages 18–24: 20.6%"
         }
       }
     },
@@ -309,7 +365,8 @@
         "filled": true,
         "color": "#555",
         "size": 80
-      }
+      },
+      "encoding": {}
     },
     {
       "transform": [
@@ -334,7 +391,7 @@
     {
       "transform": [
         {
-          "filter": "datum.group == '14\u201317' && datum.year == 2023"
+          "filter": "datum.group == '14–17' && datum.year == 2023"
         }
       ],
       "mark": {
@@ -347,7 +404,7 @@
       },
       "encoding": {
         "text": {
-          "value": "Ages 14\u201317: 9.7%"
+          "value": "Ages 14–17: 9.7%"
         }
       }
     },
@@ -388,7 +445,7 @@
           {
             "x": 2017.5,
             "y": 18,
-            "txt": "\u2014 up from just 5% in 2019"
+            "txt": "— up from just 5% in 2019"
           }
         ]
       },

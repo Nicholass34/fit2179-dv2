@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Australians embrace harm reduction. Legalisation is another story.",
-    "subtitle": "Public support for drug policy measures, 2022\u201323. Centerline = 50% majority threshold.",
+    "subtitle": "Public support for drug policy measures, 2022–23. Centerline = 50% majority threshold.",
     "anchor": "start",
     "fontSize": 19,
     "subtitleFontSize": 13,
@@ -231,7 +231,24 @@
             "symbolSize": 200,
             "padding": 8
           }
-        }
+        },
+        "tooltip": [
+          {
+            "field": "policy",
+            "type": "nominal",
+            "title": "Policy"
+          },
+          {
+            "field": "support",
+            "type": "quantitative",
+            "title": "Support (%)"
+          },
+          {
+            "field": "category",
+            "type": "nominal",
+            "title": "Stance"
+          }
+        ]
       }
     },
     {

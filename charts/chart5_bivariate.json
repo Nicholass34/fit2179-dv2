@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Two risk factors at once: smoking \u00d7 drinking by state",
-    "subtitle": "How states compare on both daily smoking and risky alcohol consumption, NDSHS 2022\u201323",
+    "text": "Two risk factors at once: smoking × drinking by state",
+    "subtitle": "How states compare on both daily smoking and risky alcohol consumption, NDSHS 2022–23",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -33,634 +33,15 @@
       "layer": [
         {
           "data": {
-            "values": {
-              "type": "FeatureCollection",
-              "features": [
-                {
-                  "type": "Feature",
-                  "properties": {
-                    "STATE_NAME": "Western Australia",
-                    "STATE_CODE": "WA"
-                  },
-                  "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [
-                        [
-                          113.0,
-                          -22.0
-                        ],
-                        [
-                          113.5,
-                          -26.0
-                        ],
-                        [
-                          114.0,
-                          -28.0
-                        ],
-                        [
-                          115.0,
-                          -32.0
-                        ],
-                        [
-                          115.5,
-                          -34.0
-                        ],
-                        [
-                          117.0,
-                          -35.1
-                        ],
-                        [
-                          120.0,
-                          -33.9
-                        ],
-                        [
-                          123.0,
-                          -33.7
-                        ],
-                        [
-                          125.0,
-                          -32.5
-                        ],
-                        [
-                          129.0,
-                          -32.0
-                        ],
-                        [
-                          129.0,
-                          -25.0
-                        ],
-                        [
-                          129.0,
-                          -14.5
-                        ],
-                        [
-                          128.0,
-                          -14.5
-                        ],
-                        [
-                          127.0,
-                          -14.0
-                        ],
-                        [
-                          126.0,
-                          -14.0
-                        ],
-                        [
-                          125.0,
-                          -14.5
-                        ],
-                        [
-                          124.0,
-                          -16.0
-                        ],
-                        [
-                          123.0,
-                          -17.0
-                        ],
-                        [
-                          122.0,
-                          -18.0
-                        ],
-                        [
-                          121.0,
-                          -19.5
-                        ],
-                        [
-                          119.0,
-                          -20.0
-                        ],
-                        [
-                          117.0,
-                          -20.5
-                        ],
-                        [
-                          115.0,
-                          -21.0
-                        ],
-                        [
-                          113.0,
-                          -22.0
-                        ]
-                      ]
-                    ]
-                  }
-                },
-                {
-                  "type": "Feature",
-                  "properties": {
-                    "STATE_NAME": "Northern Territory",
-                    "STATE_CODE": "NT"
-                  },
-                  "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [
-                        [
-                          129.0,
-                          -11.0
-                        ],
-                        [
-                          129.0,
-                          -26.0
-                        ],
-                        [
-                          138.0,
-                          -26.0
-                        ],
-                        [
-                          138.0,
-                          -17.0
-                        ],
-                        [
-                          137.0,
-                          -16.5
-                        ],
-                        [
-                          136.0,
-                          -15.5
-                        ],
-                        [
-                          135.0,
-                          -14.5
-                        ],
-                        [
-                          134.0,
-                          -13.0
-                        ],
-                        [
-                          132.0,
-                          -11.5
-                        ],
-                        [
-                          131.0,
-                          -11.5
-                        ],
-                        [
-                          130.0,
-                          -12.5
-                        ],
-                        [
-                          129.5,
-                          -11.5
-                        ],
-                        [
-                          129.0,
-                          -11.0
-                        ]
-                      ]
-                    ]
-                  }
-                },
-                {
-                  "type": "Feature",
-                  "properties": {
-                    "STATE_NAME": "South Australia",
-                    "STATE_CODE": "SA"
-                  },
-                  "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [
-                        [
-                          129.0,
-                          -26.0
-                        ],
-                        [
-                          141.0,
-                          -26.0
-                        ],
-                        [
-                          141.0,
-                          -34.0
-                        ],
-                        [
-                          140.5,
-                          -38.0
-                        ],
-                        [
-                          139.0,
-                          -36.0
-                        ],
-                        [
-                          137.5,
-                          -35.0
-                        ],
-                        [
-                          136.5,
-                          -35.0
-                        ],
-                        [
-                          135.5,
-                          -35.0
-                        ],
-                        [
-                          134.5,
-                          -33.0
-                        ],
-                        [
-                          133.0,
-                          -32.5
-                        ],
-                        [
-                          131.5,
-                          -31.5
-                        ],
-                        [
-                          130.0,
-                          -31.5
-                        ],
-                        [
-                          129.0,
-                          -32.0
-                        ],
-                        [
-                          129.0,
-                          -26.0
-                        ]
-                      ]
-                    ]
-                  }
-                },
-                {
-                  "type": "Feature",
-                  "properties": {
-                    "STATE_NAME": "Queensland",
-                    "STATE_CODE": "QLD"
-                  },
-                  "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [
-                        [
-                          138.0,
-                          -17.0
-                        ],
-                        [
-                          138.0,
-                          -26.0
-                        ],
-                        [
-                          141.0,
-                          -26.0
-                        ],
-                        [
-                          141.0,
-                          -29.0
-                        ],
-                        [
-                          149.0,
-                          -28.5
-                        ],
-                        [
-                          152.0,
-                          -28.0
-                        ],
-                        [
-                          153.5,
-                          -28.2
-                        ],
-                        [
-                          153.5,
-                          -25.0
-                        ],
-                        [
-                          152.5,
-                          -23.5
-                        ],
-                        [
-                          151.5,
-                          -22.5
-                        ],
-                        [
-                          150.5,
-                          -21.0
-                        ],
-                        [
-                          149.5,
-                          -20.5
-                        ],
-                        [
-                          148.5,
-                          -19.5
-                        ],
-                        [
-                          146.5,
-                          -18.0
-                        ],
-                        [
-                          145.5,
-                          -16.5
-                        ],
-                        [
-                          145.0,
-                          -15.0
-                        ],
-                        [
-                          144.0,
-                          -14.0
-                        ],
-                        [
-                          142.5,
-                          -10.7
-                        ],
-                        [
-                          142.0,
-                          -11.5
-                        ],
-                        [
-                          141.5,
-                          -13.5
-                        ],
-                        [
-                          141.0,
-                          -15.5
-                        ],
-                        [
-                          141.0,
-                          -17.0
-                        ],
-                        [
-                          139.5,
-                          -17.0
-                        ],
-                        [
-                          138.0,
-                          -17.0
-                        ]
-                      ]
-                    ]
-                  }
-                },
-                {
-                  "type": "Feature",
-                  "properties": {
-                    "STATE_NAME": "New South Wales",
-                    "STATE_CODE": "NSW"
-                  },
-                  "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [
-                        [
-                          141.0,
-                          -29.0
-                        ],
-                        [
-                          141.0,
-                          -34.0
-                        ],
-                        [
-                          142.5,
-                          -34.5
-                        ],
-                        [
-                          144.0,
-                          -36.0
-                        ],
-                        [
-                          146.0,
-                          -36.5
-                        ],
-                        [
-                          147.5,
-                          -36.0
-                        ],
-                        [
-                          148.5,
-                          -36.5
-                        ],
-                        [
-                          149.0,
-                          -36.0
-                        ],
-                        [
-                          149.5,
-                          -35.5
-                        ],
-                        [
-                          150.0,
-                          -34.0
-                        ],
-                        [
-                          150.5,
-                          -34.5
-                        ],
-                        [
-                          150.8,
-                          -35.0
-                        ],
-                        [
-                          151.0,
-                          -33.5
-                        ],
-                        [
-                          152.5,
-                          -32.0
-                        ],
-                        [
-                          153.5,
-                          -29.0
-                        ],
-                        [
-                          153.5,
-                          -28.2
-                        ],
-                        [
-                          152.0,
-                          -28.0
-                        ],
-                        [
-                          149.0,
-                          -28.5
-                        ],
-                        [
-                          141.0,
-                          -29.0
-                        ]
-                      ]
-                    ]
-                  }
-                },
-                {
-                  "type": "Feature",
-                  "properties": {
-                    "STATE_NAME": "Victoria",
-                    "STATE_CODE": "VIC"
-                  },
-                  "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [
-                        [
-                          141.0,
-                          -34.0
-                        ],
-                        [
-                          140.5,
-                          -38.0
-                        ],
-                        [
-                          141.5,
-                          -38.4
-                        ],
-                        [
-                          143.0,
-                          -38.8
-                        ],
-                        [
-                          144.5,
-                          -38.5
-                        ],
-                        [
-                          146.0,
-                          -39.0
-                        ],
-                        [
-                          147.0,
-                          -38.7
-                        ],
-                        [
-                          148.5,
-                          -37.8
-                        ],
-                        [
-                          149.9,
-                          -37.5
-                        ],
-                        [
-                          149.5,
-                          -36.5
-                        ],
-                        [
-                          149.0,
-                          -36.0
-                        ],
-                        [
-                          148.5,
-                          -36.5
-                        ],
-                        [
-                          147.5,
-                          -36.0
-                        ],
-                        [
-                          146.0,
-                          -36.5
-                        ],
-                        [
-                          144.0,
-                          -36.0
-                        ],
-                        [
-                          142.5,
-                          -34.5
-                        ],
-                        [
-                          141.0,
-                          -34.0
-                        ]
-                      ]
-                    ]
-                  }
-                },
-                {
-                  "type": "Feature",
-                  "properties": {
-                    "STATE_NAME": "Tasmania",
-                    "STATE_CODE": "TAS"
-                  },
-                  "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [
-                        [
-                          144.6,
-                          -40.6
-                        ],
-                        [
-                          144.7,
-                          -43.6
-                        ],
-                        [
-                          146.5,
-                          -43.7
-                        ],
-                        [
-                          148.0,
-                          -43.5
-                        ],
-                        [
-                          148.3,
-                          -42.5
-                        ],
-                        [
-                          148.0,
-                          -41.5
-                        ],
-                        [
-                          148.2,
-                          -40.5
-                        ],
-                        [
-                          147.0,
-                          -40.7
-                        ],
-                        [
-                          145.5,
-                          -40.7
-                        ],
-                        [
-                          144.6,
-                          -40.6
-                        ]
-                      ]
-                    ]
-                  }
-                },
-                {
-                  "type": "Feature",
-                  "properties": {
-                    "STATE_NAME": "Australian Capital Territory",
-                    "STATE_CODE": "ACT"
-                  },
-                  "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [
-                        [
-                          148.8,
-                          -35.4
-                        ],
-                        [
-                          148.8,
-                          -36.0
-                        ],
-                        [
-                          149.2,
-                          -36.0
-                        ],
-                        [
-                          149.2,
-                          -35.4
-                        ],
-                        [
-                          148.8,
-                          -35.4
-                        ]
-                      ]
-                    ]
-                  }
-                }
-              ]
-            },
+            "url": "data/australia_states.geojson",
             "format": {
+              "type": "json",
               "property": "features"
             }
           },
           "transform": [
             {
-              "lookup": "properties.STATE_CODE",
+              "lookup": "properties.STATE_NAME",
               "from": {
                 "data": {
                   "values": [
@@ -668,93 +49,69 @@
                       "state": "NSW",
                       "smoke": 7.5,
                       "drink": 31.2,
-                      "smoke_class": 0,
-                      "drink_class": 0,
-                      "bivariate_code": "s0d0",
                       "bivariate_label": "Low smoking, Low drinking",
                       "color": "#E8DDF4",
-                      "state_code": "NSW"
+                      "state_name": "New South Wales"
                     },
                     {
                       "state": "Vic",
                       "smoke": 7.6,
                       "drink": 26.4,
-                      "smoke_class": 0,
-                      "drink_class": 0,
-                      "bivariate_code": "s0d0",
                       "bivariate_label": "Low smoking, Low drinking",
                       "color": "#E8DDF4",
-                      "state_code": "VIC"
+                      "state_name": "Victoria"
                     },
                     {
                       "state": "Qld",
                       "smoke": 10.5,
                       "drink": 33.1,
-                      "smoke_class": 2,
-                      "drink_class": 1,
-                      "bivariate_code": "s2d1",
                       "bivariate_label": "High smoking, Mid drinking",
                       "color": "#735E8E",
-                      "state_code": "QLD"
+                      "state_name": "Queensland"
                     },
                     {
                       "state": "WA",
                       "smoke": 7.7,
                       "drink": 33.2,
-                      "smoke_class": 0,
-                      "drink_class": 1,
-                      "bivariate_code": "s0d1",
                       "bivariate_label": "Low smoking, Mid drinking",
                       "color": "#C8B8D9",
-                      "state_code": "WA"
+                      "state_name": "Western Australia"
                     },
                     {
                       "state": "SA",
                       "smoke": 9.0,
                       "drink": 32.2,
-                      "smoke_class": 1,
-                      "drink_class": 1,
-                      "bivariate_code": "s1d1",
                       "bivariate_label": "Mid smoking, Mid drinking",
                       "color": "#A899B8",
-                      "state_code": "SA"
+                      "state_name": "South Australia"
                     },
                     {
                       "state": "Tas",
                       "smoke": 11.3,
                       "drink": 34.0,
-                      "smoke_class": 2,
-                      "drink_class": 2,
-                      "bivariate_code": "s2d2",
                       "bivariate_label": "High smoking, High drinking",
                       "color": "#3D2A60",
-                      "state_code": "TAS"
+                      "state_name": "Tasmania"
                     },
                     {
                       "state": "ACT",
                       "smoke": 4.8,
                       "drink": 26.8,
-                      "smoke_class": 0,
-                      "drink_class": 0,
-                      "bivariate_code": "s0d0",
                       "bivariate_label": "Low smoking, Low drinking",
                       "color": "#E8DDF4",
-                      "state_code": "ACT"
+                      "state_name": "Australian Capital Territory"
                     },
                     {
                       "state": "NT",
                       "smoke": 13.1,
                       "drink": 40.4,
-                      "smoke_class": 2,
-                      "drink_class": 2,
-                      "bivariate_code": "s2d2",
                       "bivariate_label": "High smoking, High drinking",
                       "color": "#3D2A60",
-                      "state_code": "NT"
+                      "state_name": "Northern Territory"
                     }
                   ]
                 },
-                "key": "state_code",
+                "key": "state_name",
                 "fields": [
                   "state",
                   "smoke",
@@ -776,15 +133,37 @@
               "type": "nominal",
               "scale": null,
               "legend": null
-            }
+            },
+            "tooltip": [
+              {
+                "field": "state",
+                "type": "nominal",
+                "title": "State"
+              },
+              {
+                "field": "smoke",
+                "type": "quantitative",
+                "title": "Daily smoking (%)"
+              },
+              {
+                "field": "drink",
+                "type": "quantitative",
+                "title": "Risky drinking (%)"
+              },
+              {
+                "field": "bivariate_label",
+                "type": "nominal",
+                "title": "Category"
+              }
+            ]
           }
         },
         {
           "data": {
             "values": [
               {
-                "lon": 122.0,
-                "lat": -25.0,
+                "lon": 121.5,
+                "lat": -25.5,
                 "label": "WA",
                 "textColor": "#3D2A60"
               },
@@ -796,31 +175,31 @@
               },
               {
                 "lon": 135.0,
-                "lat": -30.5,
+                "lat": -30.0,
                 "label": "SA",
                 "textColor": "white"
               },
               {
-                "lon": 145.5,
+                "lon": 145.0,
                 "lat": -22.5,
                 "label": "QLD",
                 "textColor": "white"
               },
               {
-                "lon": 147.5,
-                "lat": -32.0,
+                "lon": 146.8,
+                "lat": -32.3,
                 "label": "NSW",
                 "textColor": "#3D2A60"
               },
               {
-                "lon": 144.5,
-                "lat": -37.0,
+                "lon": 143.5,
+                "lat": -36.8,
                 "label": "VIC",
                 "textColor": "#3D2A60"
               },
               {
-                "lon": 146.5,
-                "lat": -42.5,
+                "lon": 146.6,
+                "lat": -41.8,
                 "label": "TAS",
                 "textColor": "white"
               }
@@ -855,10 +234,10 @@
           "data": {
             "values": [
               {
-                "x1": 149.0,
-                "y1": -35.7,
-                "x2": 152.0,
-                "y2": -35.2
+                "x1": 149.1,
+                "y1": -35.5,
+                "x2": 152.8,
+                "y2": -34.5
               }
             ]
           },
@@ -892,8 +271,8 @@
           "data": {
             "values": [
               {
-                "lon": 152.5,
-                "lat": -35.0,
+                "lon": 153.2,
+                "lat": -34.3,
                 "label": "ACT"
               }
             ]
@@ -902,7 +281,8 @@
             "type": "text",
             "fontSize": 11,
             "fontWeight": 500,
-            "color": "#555"
+            "color": "#555",
+            "align": "left"
           },
           "encoding": {
             "longitude": {

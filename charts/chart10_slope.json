@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Older Australians are using more illicit drugs than ever",
-    "subtitle": "Recent illicit drug use by age, 2001 vs 2022\u201323 (% of each age group)",
+    "subtitle": "Recent illicit drug use by age, 2001 vs 2022–23 (% of each age group)",
     "anchor": "start",
     "fontSize": 19,
     "subtitleFontSize": 13,
@@ -29,71 +29,71 @@
       "data": {
         "values": [
           {
-            "age": "14\u201319",
+            "age": "14–19",
             "year": "2001",
             "year_num": 2001,
             "rate": 27.7,
             "direction": "Decreased"
           },
           {
-            "age": "14\u201319",
-            "year": "2022\u201323",
+            "age": "14–19",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 19.2,
             "direction": "Decreased"
           },
           {
-            "age": "20\u201329",
+            "age": "20–29",
             "year": "2001",
             "year_num": 2001,
             "rate": 34.6,
             "direction": "Decreased"
           },
           {
-            "age": "20\u201329",
-            "year": "2022\u201323",
+            "age": "20–29",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 32.9,
             "direction": "Decreased"
           },
           {
-            "age": "30\u201339",
+            "age": "30–39",
             "year": "2001",
             "year_num": 2001,
             "rate": 19.8,
             "direction": "Increased"
           },
           {
-            "age": "30\u201339",
-            "year": "2022\u201323",
+            "age": "30–39",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 22.7,
             "direction": "Increased"
           },
           {
-            "age": "40\u201349",
+            "age": "40–49",
             "year": "2001",
             "year_num": 2001,
             "rate": 11.8,
             "direction": "Increased"
           },
           {
-            "age": "40\u201349",
-            "year": "2022\u201323",
+            "age": "40–49",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 17.5,
             "direction": "Increased"
           },
           {
-            "age": "50\u201359",
+            "age": "50–59",
             "year": "2001",
             "year_num": 2001,
             "rate": 6.7,
             "direction": "Increased"
           },
           {
-            "age": "50\u201359",
-            "year": "2022\u201323",
+            "age": "50–59",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 13.6,
             "direction": "Increased"
@@ -107,7 +107,7 @@
           },
           {
             "age": "60+",
-            "year": "2022\u201323",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 7.8,
             "direction": "Increased"
@@ -135,7 +135,7 @@
               2001,
               2023
             ],
-            "labelExpr": "datum.value == 2001 ? '2001' : '2022\u201323'",
+            "labelExpr": "datum.value == 2001 ? '2001' : '2022–23'",
             "labelFontSize": 13,
             "labelFontWeight": 600,
             "labelColor": "#333",
@@ -181,71 +181,71 @@
       "data": {
         "values": [
           {
-            "age": "14\u201319",
+            "age": "14–19",
             "year": "2001",
             "year_num": 2001,
             "rate": 27.7,
             "direction": "Decreased"
           },
           {
-            "age": "14\u201319",
-            "year": "2022\u201323",
+            "age": "14–19",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 19.2,
             "direction": "Decreased"
           },
           {
-            "age": "20\u201329",
+            "age": "20–29",
             "year": "2001",
             "year_num": 2001,
             "rate": 34.6,
             "direction": "Decreased"
           },
           {
-            "age": "20\u201329",
-            "year": "2022\u201323",
+            "age": "20–29",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 32.9,
             "direction": "Decreased"
           },
           {
-            "age": "30\u201339",
+            "age": "30–39",
             "year": "2001",
             "year_num": 2001,
             "rate": 19.8,
             "direction": "Increased"
           },
           {
-            "age": "30\u201339",
-            "year": "2022\u201323",
+            "age": "30–39",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 22.7,
             "direction": "Increased"
           },
           {
-            "age": "40\u201349",
+            "age": "40–49",
             "year": "2001",
             "year_num": 2001,
             "rate": 11.8,
             "direction": "Increased"
           },
           {
-            "age": "40\u201349",
-            "year": "2022\u201323",
+            "age": "40–49",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 17.5,
             "direction": "Increased"
           },
           {
-            "age": "50\u201359",
+            "age": "50–59",
             "year": "2001",
             "year_num": 2001,
             "rate": 6.7,
             "direction": "Increased"
           },
           {
-            "age": "50\u201359",
-            "year": "2022\u201323",
+            "age": "50–59",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 13.6,
             "direction": "Increased"
@@ -259,7 +259,7 @@
           },
           {
             "age": "60+",
-            "year": "2022\u201323",
+            "year": "2022–23",
             "year_num": 2023,
             "rate": 7.8,
             "direction": "Increased"
@@ -294,49 +294,66 @@
             ]
           },
           "legend": null
-        }
+        },
+        "tooltip": [
+          {
+            "field": "age",
+            "type": "nominal",
+            "title": "Age group"
+          },
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Rate (%)"
+          }
+        ]
       }
     },
     {
       "data": {
         "values": [
           {
-            "age": "14\u201319",
+            "age": "14–19",
             "year_num": 2001,
             "rate": 27.7,
-            "label": "14\u201319",
+            "label": "14–19",
             "value_label": "27.7%",
             "direction": "Decreased"
           },
           {
-            "age": "20\u201329",
+            "age": "20–29",
             "year_num": 2001,
             "rate": 34.6,
-            "label": "20\u201329",
+            "label": "20–29",
             "value_label": "34.6%",
             "direction": "Decreased"
           },
           {
-            "age": "30\u201339",
+            "age": "30–39",
             "year_num": 2001,
             "rate": 19.8,
-            "label": "30\u201339",
+            "label": "30–39",
             "value_label": "19.8%",
             "direction": "Increased"
           },
           {
-            "age": "40\u201349",
+            "age": "40–49",
             "year_num": 2001,
             "rate": 11.8,
-            "label": "40\u201349",
+            "label": "40–49",
             "value_label": "11.8%",
             "direction": "Increased"
           },
           {
-            "age": "50\u201359",
+            "age": "50–59",
             "year_num": 2001,
             "rate": 6.7,
-            "label": "50\u201359",
+            "label": "50–59",
             "value_label": "6.7%",
             "direction": "Increased"
           },
@@ -376,42 +393,42 @@
       "data": {
         "values": [
           {
-            "age": "14\u201319",
+            "age": "14–19",
             "year_num": 2023,
             "rate": 19.2,
-            "label": "14\u201319",
+            "label": "14–19",
             "value_label": "19.2%",
             "direction": "Decreased"
           },
           {
-            "age": "20\u201329",
+            "age": "20–29",
             "year_num": 2023,
             "rate": 32.9,
-            "label": "20\u201329",
+            "label": "20–29",
             "value_label": "32.9%",
             "direction": "Decreased"
           },
           {
-            "age": "30\u201339",
+            "age": "30–39",
             "year_num": 2023,
             "rate": 22.7,
-            "label": "30\u201339",
+            "label": "30–39",
             "value_label": "22.7%",
             "direction": "Increased"
           },
           {
-            "age": "40\u201349",
+            "age": "40–49",
             "year_num": 2023,
             "rate": 17.5,
-            "label": "40\u201349",
+            "label": "40–49",
             "value_label": "17.5%",
             "direction": "Increased"
           },
           {
-            "age": "50\u201359",
+            "age": "50–59",
             "year_num": 2023,
             "rate": 13.6,
-            "label": "50\u201359",
+            "label": "50–59",
             "value_label": "13.6%",
             "direction": "Increased"
           },
@@ -467,7 +484,7 @@
           {
             "x": 2014,
             "y": 26,
-            "text": "Use among 50\u201359 and 60+ doubled"
+            "text": "Use among 50–59 and 60+ doubled"
           }
         ]
       },

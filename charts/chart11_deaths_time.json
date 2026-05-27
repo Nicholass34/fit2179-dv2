@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Drug-induced deaths: two peaks, two crises",
-    "subtitle": "Age-standardised drug-induced death rate per 100,000 Australians, 1998\u20132024 (ABS)",
+    "subtitle": "Age-standardised drug-induced death rate per 100,000 Australians, 1998–2024 (ABS)",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -218,6 +218,20 @@
         "color": "#7B241C",
         "strokeWidth": 2.5,
         "interpolate": "monotone"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Deaths per 100k"
+          }
+        ]
       }
     },
     {
