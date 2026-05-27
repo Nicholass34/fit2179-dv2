@@ -284,7 +284,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-md);
-  align-items: start;
+  align-items: stretch;
 }
 
 .chart-pair__col {
@@ -297,6 +297,10 @@ body {
   margin-bottom: 0 !important;
   max-width: 100% !important;
   padding: var(--space-sm);
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .chart-pair__label {
