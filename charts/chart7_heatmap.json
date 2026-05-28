@@ -173,7 +173,9 @@
             "labelColor": "#333",
             "domain": false,
             "ticks": false,
-            "labelPadding": 8
+            "labelPadding": 8,
+            "labelAngle": 0,
+            "labelExpr": "{'Daily smoking':'Smoking','Vaping':'Vaping','Risky drinking':'Risky drinking','Recent illicit drug use':'Illicit drug use'}[datum.value]"
           }
         },
         "y": {
