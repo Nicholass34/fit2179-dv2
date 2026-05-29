@@ -235,7 +235,7 @@
       "mark": {
         "type": "point",
         "filled": true,
-        "color": "#2E6F7C",
+        "color": "#1A1A1A",
         "size": 140,
         "stroke": "#FAFAF7",
         "strokeWidth": 2
@@ -254,7 +254,7 @@
         "dy": -16,
         "fontSize": 12,
         "fontWeight": 600,
-        "color": "#2E6F7C",
+        "color": "#1A1A1A",
         "align": "right"
       },
       "encoding": {
@@ -274,7 +274,7 @@
         "dx": -12,
         "dy": 0,
         "fontSize": 11,
-        "color": "#2E6F7C",
+        "color": "#666",
         "align": "right"
       },
       "encoding": {

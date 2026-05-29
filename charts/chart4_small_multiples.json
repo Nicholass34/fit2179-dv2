@@ -552,7 +552,7 @@
             {
               "mark": {
                 "type": "area",
-                "color": "#4B3A66",
+                "color": "#3F5E8C",
                 "opacity": 0.15,
                 "interpolate": "monotone",
                 "line": false
@@ -561,7 +561,7 @@
             {
               "mark": {
                 "type": "line",
-                "color": "#4B3A66",
+                "color": "#3F5E8C",
                 "strokeWidth": 2.5,
                 "interpolate": "monotone"
               },
@@ -584,7 +584,7 @@
               "mark": {
                 "type": "point",
                 "filled": true,
-                "color": "#4B3A66",
+                "color": "#3F5E8C",
                 "size": 40
               }
             }
