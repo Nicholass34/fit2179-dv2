@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Different drugs, different demographics",
-    "subtitle": "Use rate (%) by age group and substance, Australia 2022–23. Darker cells = more users.",
+    "subtitle": "Use rate (%) by age group and substance, Australia 2022\u201323. Darker cells = more users.",
     "anchor": "start",
     "fontSize": 20,
     "subtitleFontSize": 13,
@@ -27,102 +27,102 @@
   "data": {
     "values": [
       {
-        "age": "14–19",
+        "age": "14\u201319",
         "substance": "Daily smoking",
         "rate": 2.4
       },
       {
-        "age": "14–19",
+        "age": "14\u201319",
         "substance": "Vaping",
         "rate": 12.8
       },
       {
-        "age": "14–19",
+        "age": "14\u201319",
         "substance": "Risky drinking",
         "rate": 15.2
       },
       {
-        "age": "14–19",
+        "age": "14\u201319",
         "substance": "Recent illicit drug use",
         "rate": 19.2
       },
       {
-        "age": "20–29",
+        "age": "20\u201329",
         "substance": "Daily smoking",
         "rate": 6.7
       },
       {
-        "age": "20–29",
+        "age": "20\u201329",
         "substance": "Vaping",
         "rate": 17.2
       },
       {
-        "age": "20–29",
+        "age": "20\u201329",
         "substance": "Risky drinking",
         "rate": 38.3
       },
       {
-        "age": "20–29",
+        "age": "20\u201329",
         "substance": "Recent illicit drug use",
         "rate": 32.9
       },
       {
-        "age": "30–39",
+        "age": "30\u201339",
         "substance": "Daily smoking",
         "rate": 8.8
       },
       {
-        "age": "30–39",
+        "age": "30\u201339",
         "substance": "Vaping",
         "rate": 9.1
       },
       {
-        "age": "30–39",
+        "age": "30\u201339",
         "substance": "Risky drinking",
         "rate": 32.0
       },
       {
-        "age": "30–39",
+        "age": "30\u201339",
         "substance": "Recent illicit drug use",
         "rate": 22.7
       },
       {
-        "age": "40–49",
+        "age": "40\u201349",
         "substance": "Daily smoking",
         "rate": 10.8
       },
       {
-        "age": "40–49",
+        "age": "40\u201349",
         "substance": "Vaping",
         "rate": 5.0
       },
       {
-        "age": "40–49",
+        "age": "40\u201349",
         "substance": "Risky drinking",
         "rate": 33.0
       },
       {
-        "age": "40–49",
+        "age": "40\u201349",
         "substance": "Recent illicit drug use",
         "rate": 17.5
       },
       {
-        "age": "50–59",
+        "age": "50\u201359",
         "substance": "Daily smoking",
         "rate": 12.1
       },
       {
-        "age": "50–59",
+        "age": "50\u201359",
         "substance": "Vaping",
         "rate": 3.2
       },
       {
-        "age": "50–59",
+        "age": "50\u201359",
         "substance": "Risky drinking",
         "rate": 32.3
       },
       {
-        "age": "50–59",
+        "age": "50\u201359",
         "substance": "Recent illicit drug use",
         "rate": 13.6
       },
@@ -173,20 +173,18 @@
             "labelColor": "#333",
             "domain": false,
             "ticks": false,
-            "labelPadding": 8,
-            "labelAngle": 0,
-            "labelExpr": "{'Daily smoking':'Smoking','Vaping':'Vaping','Risky drinking':'Risky drinking','Recent illicit drug use':'Illicit drug use'}[datum.value]"
+            "labelPadding": 8
           }
         },
         "y": {
           "field": "age",
           "type": "ordinal",
           "sort": [
-            "14–19",
-            "20–29",
-            "30–39",
-            "40–49",
-            "50–59",
+            "14\u201319",
+            "20\u201329",
+            "30\u201339",
+            "40\u201349",
+            "50\u201359",
             "60+"
           ],
           "title": "Age group",
@@ -205,7 +203,7 @@
           "field": "rate",
           "type": "quantitative",
           "scale": {
-            "scheme": "purples",
+            "range": ["#EDF4F4", "#A9CDD2", "#5E9AA3", "#2E6F7C", "#1A4A53"],
             "domain": [
               0,
               40
@@ -218,24 +216,7 @@
             "gradientLength": 200,
             "orient": "right"
           }
-        },
-        "tooltip": [
-          {
-            "field": "age",
-            "type": "nominal",
-            "title": "Age group"
-          },
-          {
-            "field": "substance",
-            "type": "nominal",
-            "title": "Substance"
-          },
-          {
-            "field": "rate",
-            "type": "quantitative",
-            "title": "Rate (%)"
-          }
-        ]
+        }
       }
     },
     {
@@ -259,11 +240,11 @@
           "field": "age",
           "type": "ordinal",
           "sort": [
-            "14–19",
-            "20–29",
-            "30–39",
-            "40–49",
-            "50–59",
+            "14\u201319",
+            "20\u201329",
+            "30\u201339",
+            "40\u201349",
+            "50\u201359",
             "60+"
           ]
         },
