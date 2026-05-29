@@ -28,10 +28,10 @@ html {
 
   /* Accent colors from charts */
   --accent-red: #7B241C;
-  --accent-green: #1F7A3D;
-  --accent-teal: #1A8A7A;
-  --accent-amber: #B8862D;
-  --accent-purple: #5A6396;
+  --accent-green: #2E6F7C;  /* was green; now teal (no red/green clash) */
+  --accent-teal: #2E6F7C;
+  --accent-amber: #BC8A2E;
+  --accent-purple: #4B3A66;
 
   /* Type stack */
   --font-display: "Fraunces", Georgia, serif;
@@ -203,7 +203,7 @@ body {
    SECTIONS
    ========================= */
 .section {
-  padding: var(--space-xl) var(--space-md);
+  padding: var(--space-lg) var(--space-md);
   position: relative;
   z-index: 2;
 }
@@ -395,9 +395,9 @@ body {
    ========================= */
 .section--coda {
   background: var(--bg-alt);
-  margin-top: var(--space-xl);
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-2xl);
+  margin-top: 0;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
 }
 
 .section--coda .section__title {
