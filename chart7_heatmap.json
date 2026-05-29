@@ -1,0 +1,265 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Different drugs, different demographics",
+    "subtitle": "Use rate (%) by age group and substance, Australia 2022\u201323. Darker cells = more users.",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#666",
+    "offset": 20
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "sans-serif"
+  },
+  "background": "#FAFAF7",
+  "width": 500,
+  "height": 320,
+  "padding": {
+    "left": 20,
+    "right": 30,
+    "top": 10,
+    "bottom": 30
+  },
+  "data": {
+    "values": [
+      {
+        "age": "14\u201319",
+        "substance": "Daily smoking",
+        "rate": 2.4
+      },
+      {
+        "age": "14\u201319",
+        "substance": "Vaping",
+        "rate": 12.8
+      },
+      {
+        "age": "14\u201319",
+        "substance": "Risky drinking",
+        "rate": 15.2
+      },
+      {
+        "age": "14\u201319",
+        "substance": "Recent illicit drug use",
+        "rate": 19.2
+      },
+      {
+        "age": "20\u201329",
+        "substance": "Daily smoking",
+        "rate": 6.7
+      },
+      {
+        "age": "20\u201329",
+        "substance": "Vaping",
+        "rate": 17.2
+      },
+      {
+        "age": "20\u201329",
+        "substance": "Risky drinking",
+        "rate": 38.3
+      },
+      {
+        "age": "20\u201329",
+        "substance": "Recent illicit drug use",
+        "rate": 32.9
+      },
+      {
+        "age": "30\u201339",
+        "substance": "Daily smoking",
+        "rate": 8.8
+      },
+      {
+        "age": "30\u201339",
+        "substance": "Vaping",
+        "rate": 9.1
+      },
+      {
+        "age": "30\u201339",
+        "substance": "Risky drinking",
+        "rate": 32.0
+      },
+      {
+        "age": "30\u201339",
+        "substance": "Recent illicit drug use",
+        "rate": 22.7
+      },
+      {
+        "age": "40\u201349",
+        "substance": "Daily smoking",
+        "rate": 10.8
+      },
+      {
+        "age": "40\u201349",
+        "substance": "Vaping",
+        "rate": 5.0
+      },
+      {
+        "age": "40\u201349",
+        "substance": "Risky drinking",
+        "rate": 33.0
+      },
+      {
+        "age": "40\u201349",
+        "substance": "Recent illicit drug use",
+        "rate": 17.5
+      },
+      {
+        "age": "50\u201359",
+        "substance": "Daily smoking",
+        "rate": 12.1
+      },
+      {
+        "age": "50\u201359",
+        "substance": "Vaping",
+        "rate": 3.2
+      },
+      {
+        "age": "50\u201359",
+        "substance": "Risky drinking",
+        "rate": 32.3
+      },
+      {
+        "age": "50\u201359",
+        "substance": "Recent illicit drug use",
+        "rate": 13.6
+      },
+      {
+        "age": "60+",
+        "substance": "Daily smoking",
+        "rate": 7.5
+      },
+      {
+        "age": "60+",
+        "substance": "Vaping",
+        "rate": 1.0
+      },
+      {
+        "age": "60+",
+        "substance": "Risky drinking",
+        "rate": 29.1
+      },
+      {
+        "age": "60+",
+        "substance": "Recent illicit drug use",
+        "rate": 7.8
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "x": {
+          "field": "substance",
+          "type": "nominal",
+          "sort": [
+            "Daily smoking",
+            "Vaping",
+            "Risky drinking",
+            "Recent illicit drug use"
+          ],
+          "title": null,
+          "axis": {
+            "orient": "top",
+            "labelFontSize": 12,
+            "labelFontWeight": 600,
+            "labelColor": "#333",
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 8
+          }
+        },
+        "y": {
+          "field": "age",
+          "type": "ordinal",
+          "sort": [
+            "14\u201319",
+            "20\u201329",
+            "30\u201339",
+            "40\u201349",
+            "50\u201359",
+            "60+"
+          ],
+          "title": "Age group",
+          "axis": {
+            "labelFontSize": 12,
+            "labelColor": "#555",
+            "titleFontSize": 12,
+            "titleColor": "#333",
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 8,
+            "titlePadding": 12
+          }
+        },
+        "color": {
+          "field": "rate",
+          "type": "quantitative",
+          "scale": {
+            "range": ["#EDF4F4", "#A9CDD2", "#5E9AA3", "#2E6F7C", "#1A4A53"],
+            "domain": [
+              0,
+              40
+            ]
+          },
+          "legend": {
+            "title": "Use rate (%)",
+            "titleFontSize": 11,
+            "labelFontSize": 11,
+            "gradientLength": 200,
+            "orient": "right"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {
+          "field": "substance",
+          "type": "nominal",
+          "sort": [
+            "Daily smoking",
+            "Vaping",
+            "Risky drinking",
+            "Recent illicit drug use"
+          ]
+        },
+        "y": {
+          "field": "age",
+          "type": "ordinal",
+          "sort": [
+            "14\u201319",
+            "20\u201329",
+            "30\u201339",
+            "40\u201349",
+            "50\u201359",
+            "60+"
+          ]
+        },
+        "text": {
+          "field": "rate",
+          "format": ".1f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.rate > 20",
+            "value": "white"
+          },
+          "value": "#333"
+        }
+      }
+    }
+  ]
+}
