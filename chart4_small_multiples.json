@@ -1,0 +1,598 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Four substances, four trajectories",
+    "subtitle": "Use rates over time among Australians 14+. Each panel scaled independently to show shape.",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#666",
+    "offset": 20
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "sans-serif"
+  },
+  "background": "#FAFAF7",
+  "padding": {
+    "left": 20,
+    "right": 20,
+    "top": 10,
+    "bottom": 30
+  },
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "width": 320,
+          "height": 180,
+          "title": {
+            "text": "1. Daily smoking — declining",
+            "fontSize": 13,
+            "fontWeight": 600,
+            "anchor": "start",
+            "color": "#333"
+          },
+          "data": {
+            "values": [
+              {
+                "year": 1991,
+                "rate": 24.3
+              },
+              {
+                "year": 1993,
+                "rate": 25.0
+              },
+              {
+                "year": 1995,
+                "rate": 23.8
+              },
+              {
+                "year": 1998,
+                "rate": 21.8
+              },
+              {
+                "year": 2001,
+                "rate": 19.4
+              },
+              {
+                "year": 2004,
+                "rate": 17.5
+              },
+              {
+                "year": 2007,
+                "rate": 16.6
+              },
+              {
+                "year": 2010,
+                "rate": 15.1
+              },
+              {
+                "year": 2013,
+                "rate": 12.8
+              },
+              {
+                "year": 2016,
+                "rate": 12.2
+              },
+              {
+                "year": 2019,
+                "rate": 11.0
+              },
+              {
+                "year": 2023,
+                "rate": 8.3
+              }
+            ]
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  1990,
+                  2024
+                ]
+              },
+              "title": null,
+              "axis": {
+                "values": [
+                  1991,
+                  2001,
+                  2013,
+                  2023
+                ],
+                "format": "d",
+                "labelFontSize": 10,
+                "labelColor": "#555",
+                "domain": false,
+                "ticks": false,
+                "labelPadding": 4,
+                "grid": false
+              }
+            },
+            "y": {
+              "field": "rate",
+              "type": "quantitative",
+              "title": null,
+              "scale": {
+                "domain": [
+                  0,
+                  28
+                ]
+              },
+              "axis": {
+                "labelFontSize": 10,
+                "labelColor": "#555",
+                "domain": false,
+                "ticks": false,
+                "grid": true,
+                "gridColor": "#EEE",
+                "gridDash": [
+                  2,
+                  2
+                ],
+                "labelPadding": 4,
+                "labelExpr": "datum.value + '%'"
+              }
+            }
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "area",
+                "color": "#7B241C",
+                "opacity": 0.15,
+                "interpolate": "monotone",
+                "line": false
+              }
+            },
+            {
+              "mark": {
+                "type": "line",
+                "color": "#7B241C",
+                "strokeWidth": 2.5,
+                "interpolate": "monotone"
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "year",
+                    "type": "quantitative",
+                    "title": "Year"
+                  },
+                  {
+                    "field": "rate",
+                    "type": "quantitative",
+                    "title": "Rate (%)"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "point",
+                "filled": true,
+                "color": "#7B241C",
+                "size": 40
+              }
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "height": 180,
+          "title": {
+            "text": "2. Vaping — exploding",
+            "fontSize": 13,
+            "fontWeight": 600,
+            "anchor": "start",
+            "color": "#333"
+          },
+          "data": {
+            "values": [
+              {
+                "year": 2016,
+                "rate": 1.2
+              },
+              {
+                "year": 2019,
+                "rate": 2.5
+              },
+              {
+                "year": 2023,
+                "rate": 7.0
+              }
+            ]
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  1990,
+                  2024
+                ]
+              },
+              "title": null,
+              "axis": {
+                "values": [
+                  1991,
+                  2001,
+                  2013,
+                  2023
+                ],
+                "format": "d",
+                "labelFontSize": 10,
+                "labelColor": "#555",
+                "domain": false,
+                "ticks": false,
+                "labelPadding": 4,
+                "grid": false
+              }
+            },
+            "y": {
+              "field": "rate",
+              "type": "quantitative",
+              "title": null,
+              "scale": {
+                "domain": [
+                  0,
+                  8
+                ]
+              },
+              "axis": {
+                "labelFontSize": 10,
+                "labelColor": "#555",
+                "domain": false,
+                "ticks": false,
+                "grid": true,
+                "gridColor": "#EEE",
+                "gridDash": [
+                  2,
+                  2
+                ],
+                "labelPadding": 4,
+                "labelExpr": "datum.value + '%'"
+              }
+            }
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "area",
+                "color": "#2E6F7C",
+                "opacity": 0.15,
+                "interpolate": "monotone",
+                "line": false
+              }
+            },
+            {
+              "mark": {
+                "type": "line",
+                "color": "#2E6F7C",
+                "strokeWidth": 2.5,
+                "interpolate": "monotone"
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "year",
+                    "type": "quantitative",
+                    "title": "Year"
+                  },
+                  {
+                    "field": "rate",
+                    "type": "quantitative",
+                    "title": "Rate (%)"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "point",
+                "filled": true,
+                "color": "#2E6F7C",
+                "size": 40
+              }
+            }
+          ]
+        }
+      ],
+      "spacing": 30
+    },
+    {
+      "hconcat": [
+        {
+          "width": 320,
+          "height": 180,
+          "title": {
+            "text": "3. Risky drinking — stubborn",
+            "fontSize": 13,
+            "fontWeight": 600,
+            "anchor": "start",
+            "color": "#333"
+          },
+          "data": {
+            "values": [
+              {
+                "year": 2001,
+                "rate": 38.1
+              },
+              {
+                "year": 2004,
+                "rate": 39.2
+              },
+              {
+                "year": 2007,
+                "rate": 38.1
+              },
+              {
+                "year": 2010,
+                "rate": 37.7
+              },
+              {
+                "year": 2013,
+                "rate": 35.2
+              },
+              {
+                "year": 2016,
+                "rate": 33.2
+              },
+              {
+                "year": 2019,
+                "rate": 32.0
+              },
+              {
+                "year": 2023,
+                "rate": 30.7
+              }
+            ]
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  1990,
+                  2024
+                ]
+              },
+              "title": null,
+              "axis": {
+                "values": [
+                  1991,
+                  2001,
+                  2013,
+                  2023
+                ],
+                "format": "d",
+                "labelFontSize": 10,
+                "labelColor": "#555",
+                "domain": false,
+                "ticks": false,
+                "labelPadding": 4,
+                "grid": false
+              }
+            },
+            "y": {
+              "field": "rate",
+              "type": "quantitative",
+              "title": null,
+              "scale": {
+                "domain": [
+                  0,
+                  45
+                ]
+              },
+              "axis": {
+                "labelFontSize": 10,
+                "labelColor": "#555",
+                "domain": false,
+                "ticks": false,
+                "grid": true,
+                "gridColor": "#EEE",
+                "gridDash": [
+                  2,
+                  2
+                ],
+                "labelPadding": 4,
+                "labelExpr": "datum.value + '%'"
+              }
+            }
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "area",
+                "color": "#BC8A2E",
+                "opacity": 0.15,
+                "interpolate": "monotone",
+                "line": false
+              }
+            },
+            {
+              "mark": {
+                "type": "line",
+                "color": "#BC8A2E",
+                "strokeWidth": 2.5,
+                "interpolate": "monotone"
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "year",
+                    "type": "quantitative",
+                    "title": "Year"
+                  },
+                  {
+                    "field": "rate",
+                    "type": "quantitative",
+                    "title": "Rate (%)"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "point",
+                "filled": true,
+                "color": "#BC8A2E",
+                "size": 40
+              }
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "height": 180,
+          "title": {
+            "text": "4. Illicit drug use — quiet rise",
+            "fontSize": 13,
+            "fontWeight": 600,
+            "anchor": "start",
+            "color": "#333"
+          },
+          "data": {
+            "values": [
+              {
+                "year": 2001,
+                "rate": 14.2
+              },
+              {
+                "year": 2004,
+                "rate": 12.6
+              },
+              {
+                "year": 2007,
+                "rate": 10.8
+              },
+              {
+                "year": 2010,
+                "rate": 12.0
+              },
+              {
+                "year": 2013,
+                "rate": 12.0
+              },
+              {
+                "year": 2016,
+                "rate": 12.6
+              },
+              {
+                "year": 2019,
+                "rate": 14.1
+              },
+              {
+                "year": 2023,
+                "rate": 15.1
+              }
+            ]
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  1990,
+                  2024
+                ]
+              },
+              "title": null,
+              "axis": {
+                "values": [
+                  1991,
+                  2001,
+                  2013,
+                  2023
+                ],
+                "format": "d",
+                "labelFontSize": 10,
+                "labelColor": "#555",
+                "domain": false,
+                "ticks": false,
+                "labelPadding": 4,
+                "grid": false
+              }
+            },
+            "y": {
+              "field": "rate",
+              "type": "quantitative",
+              "title": null,
+              "scale": {
+                "domain": [
+                  0,
+                  17
+                ]
+              },
+              "axis": {
+                "labelFontSize": 10,
+                "labelColor": "#555",
+                "domain": false,
+                "ticks": false,
+                "grid": true,
+                "gridColor": "#EEE",
+                "gridDash": [
+                  2,
+                  2
+                ],
+                "labelPadding": 4,
+                "labelExpr": "datum.value + '%'"
+              }
+            }
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "area",
+                "color": "#3F5E8C",
+                "opacity": 0.15,
+                "interpolate": "monotone",
+                "line": false
+              }
+            },
+            {
+              "mark": {
+                "type": "line",
+                "color": "#3F5E8C",
+                "strokeWidth": 2.5,
+                "interpolate": "monotone"
+              },
+              "encoding": {
+                "tooltip": [
+                  {
+                    "field": "year",
+                    "type": "quantitative",
+                    "title": "Year"
+                  },
+                  {
+                    "field": "rate",
+                    "type": "quantitative",
+                    "title": "Rate (%)"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "point",
+                "filled": true,
+                "color": "#3F5E8C",
+                "size": 40
+              }
+            }
+          ]
+        }
+      ],
+      "spacing": 30
+    }
+  ],
+  "spacing": 30
+}
